@@ -95,7 +95,7 @@
 
 	// Main Sections: Two.
 
-		// Lightbox gallery.
+/*		// Lightbox gallery.
 			$window.on('load', function() {
 
 				$('#two').poptrox({
@@ -113,5 +113,5 @@
 				});
 
 			});
-
+/*
 })(jQuery);
