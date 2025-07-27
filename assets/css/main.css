@@ -3265,3 +3265,48 @@ input, select, textarea {
         height: 140px;
     }
 }
+/* --- HEADER: Avatar + Name Centering --- */
+#header {
+    padding: 6em 0 3em 0;      /* Remove side padding, keep vertical spacing */
+    text-align: center;        /* Center contents by default */
+}
+
+/* Inner container: flex layout for perfect centering */
+#header > .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* Center horizontally */
+    justify-content: center;   /* Center vertically (if needed) */
+    margin: 0 auto;            /* Center container itself */
+    width: 100%;
+}
+
+/* Avatar wrapper: remove any side offsets from template */
+#header .image.avatar {
+    display: block;
+    margin: 0 auto 1rem auto;  /* Center and add space below */
+}
+
+/* Avatar image: circular, responsive, no distortion */
+#header .image.avatar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Name text: centered with no extra margin */
+#header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5rem;         /* Adjust size to your liking */
+}
+
+/* Responsive scaling for smaller screens */
+@media (max-width: 768px) {
+    #header .image.avatar img {
+        width: 140px;
+        height: 140px;
+    }
+}
