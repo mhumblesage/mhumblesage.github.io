@@ -3310,3 +3310,26 @@ input, select, textarea {
         height: 140px;
     }
 }
+/* --- Top-left social icons --- */
+.top-icons {
+    position: absolute;    /* Place independently from flow */
+    top: 20px;             /* Distance from top edge */
+    left: 20px;            /* Distance from left edge */
+    display: flex;
+    gap: 1rem;             /* Space between icons */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;         /* Ensure it stays above other elements */
+}
+
+.top-icons a {
+    font-size: 1.25rem;    /* Icon size */
+    color: #787878;        /* Match your footer icon color */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.top-icons a:hover {
+    color: #49bf9d;        /* Same hover color as footer links */
+}
